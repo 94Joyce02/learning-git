@@ -22,7 +22,7 @@ public class ArrayDeque<T> {
         return size;
     }
     //minusOne help to return index of first item;
-    public int minusOne(int index){
+    private int minusOne(int index){
         if(index==0){
             return length-1;
         }
@@ -30,7 +30,7 @@ public class ArrayDeque<T> {
     }
 
     //plusOne help to return index of last item;
-    public int plusOne(int index, int length){
+    private int plusOne(int index, int length){
         index = index%length;
         if(index==length-1){
             return 0;
